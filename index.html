@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -247,7 +248,6 @@
             background: var(--accent-bg);
         }
 
-
         /* ============ HERO SECTION ============ */
         .hero {
             min-height: 100vh;
@@ -273,17 +273,12 @@
             pointer-events: none;
         }
 
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-20);
-            align-items: center;
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
             position: relative;
             z-index: 2;
-        }
-
-        .hero-content {
-            max-width: 600px;
         }
 
         .hero-title {
@@ -331,6 +326,8 @@
             display: flex;
             flex-direction: column;
             gap: var(--space-8);
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         /* ============ CONTRACT ADDRESS SECTION ============ */
@@ -366,6 +363,7 @@
         .contract-label {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: var(--space-2);
             font-size: var(--font-sm);
             color: var(--text-muted);
@@ -401,6 +399,7 @@
             flex: 1;
             word-break: break-all;
             line-height: 1.4;
+            text-align: center;
         }
 
         .copy-button {
@@ -441,12 +440,14 @@
             text-transform: uppercase;
             letter-spacing: 0.05em;
             font-weight: 600;
+            text-align: center;
         }
 
         .social-links {
             display: flex;
             gap: var(--space-4);
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .social-link {
@@ -914,10 +915,6 @@
                 padding-right: var(--space-8);
             }
             
-            .hero-grid {
-                gap: var(--space-24);
-            }
-            
             .widget-container {
                 min-height: 850px;
                 max-width: 520px;
@@ -938,10 +935,6 @@
 
         /* Desktop (1024px - 1439px) */
         @media (max-width: 1439px) {
-            .hero-grid {
-                gap: var(--space-16);
-            }
-            
             .about-grid {
                 gap: var(--space-16);
             }
@@ -969,12 +962,6 @@
             
             .hero {
                 padding: calc(var(--space-24) + 80px) 0 var(--space-16);
-            }
-            
-            .hero-grid {
-                grid-template-columns: 1fr;
-                gap: var(--space-16);
-                text-align: center;
             }
             
             .hero-horse-icon {
@@ -1199,10 +1186,6 @@
                 max-width: 1800px;
             }
             
-            .hero-grid {
-                gap: var(--space-32);
-            }
-            
             .widget-container {
                 min-height: 900px;
                 max-width: 550px;
@@ -1335,87 +1318,61 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <h1 class="hero-title animate-slide-in-left">
-                        $DARKHORSE
-                        <svg class="hero-horse-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M20.5 6c-.61 0-1.25.11-1.89.3-.57-.68-1.33-1.06-2.11-1.06-.57 0-1.15.22-1.61.65C14.1 4.45 12.71 4 11.5 4c-2.89 0-5.29 2.18-5.5 4.93C4.84 8.46 4 9.18 4 10c0 1.1.9 2 2 2h14.5c1.38 0 2.5-1.12 2.5-2.5S21.88 6 20.5 6z"/>
-                            <path d="M12 14l-2 2-2-2-2 2v4c0 1.1.9 2 2 2h4V14z"/>
-                            <path d="M16 14v8h4c1.1 0 2-.9 2-2v-4l-2-2-2 2-2-2z"/>
-                        </svg>
-                    </h1>
-                    <p class="hero-subtitle animate-slide-in-left delay-200">
-                        The memecoin that embraces its worthlessness with pride. Born from the internet, driven by community, destined for greatness or absolute failure.
-                    </p>
-                    
-                    <div class="hero-cta-section">
-                        <div class="contract-card animate-fade-in-up delay-300">
-                            <div class="contract-label">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 10.6V11.8l1-0.8L22 7 12 2z"/>
-                                </svg>
-                                Contract Address
-                            </div>
-                            <div class="contract-address-wrapper" onclick="copyContract()" role="button" tabindex="0" aria-label="Copy contract address">
-                                <span class="contract-address-text">0xa311cE63bE7f16b255e56a651F952826A2D8BAf4</span>
-                                <button class="copy-button" aria-label="Copy to clipboard">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                    </svg>
-                                    Copy
-                                </button>
-                            </div>
+            <div class="hero-content">
+                <h1 class="hero-title animate-slide-in-left">
+                    $DARKHORSE
+                    <svg class="hero-horse-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M20.5 6c-.61 0-1.25.11-1.89.3-.57-.68-1.33-1.06-2.11-1.06-.57 0-1.15.22-1.61.65C14.1 4.45 12.71 4 11.5 4c-2.89 0-5.29 2.18-5.5 4.93C4.84 8.46 4 9.18 4 10c0 1.1.9 2 2 2h14.5c1.38 0 2.5-1.12 2.5-2.5S21.88 6 20.5 6z"/>
+                        <path d="M12 14l-2 2-2-2-2 2v4c0 1.1.9 2 2 2h4V14z"/>
+                        <path d="M16 14v8h4c1.1 0 2-.9 2-2v-4l-2-2-2 2-2-2z"/>
+                    </svg>
+                </h1>
+                <p class="hero-subtitle animate-slide-in-left delay-200">
+                    The memecoin that embraces its worthlessness with pride. Born from the internet, driven by community, destined for greatness or absolute failure.
+                </p>
+                
+                <div class="hero-cta-section">
+                    <div class="contract-card animate-fade-in-up delay-300">
+                        <div class="contract-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 10.6V11.8l1-0.8L22 7 12 2z"/>
+                            </svg>
+                            Contract Address
                         </div>
-
-                        <div class="social-section animate-fade-in-up delay-400">
-                            <div class="social-label">Join the Community</div>
-                            <div class="social-links">
-                                <a href="https://x.com/darkhorseoneth1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow on X (Twitter)">
-                                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                                    </svg>
-                                    X (Twitter)
-                                </a>
-                                <a href="https://t.me/+zCE3-32AAvJlMjZk" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Join Telegram">
-                                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.64 6.8l-1.6 7.52c-.12.56-.44.7-.9.44l-2.5-1.84-1.2 1.16c-.14.14-.26.26-.52.26l.18-2.6 4.7-4.24c.2-.18-.04-.28-.32-.1L8.9 12.32l-2.48-.78c-.54-.16-.54-.54.12-.8l9.68-3.72c.44-.16.84.1.68.8z"/>
-                                    </svg>
-                                    Telegram
-                                </a>
-                                <a href="https://discord.gg/Rgf7p5zCF5" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Join Discord">
-                                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.211.375-.445.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.120.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
-                                    </svg>
-                                    Discord
-                                </a>
-                            </div>
+                        <div class="contract-address-wrapper" onclick="copyContract()" role="button" tabindex="0" aria-label="Copy contract address">
+                            <span class="contract-address-text">0xa311cE63bE7f16b255e56a651F952826A2D8BAf4</span>
+                            <button class="copy-button" aria-label="Copy to clipboard">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                Copy
+                            </button>
                         </div>
                     </div>
-                </div>
-                
-                <div class="widget-section animate-slide-in-right delay-300">
-                    <div class="widget-container">
-                        <div class="widget-header">
-                            <h2 class="widget-title">
-                                <svg class="widget-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M16 3l4 4-4 4"/>
-                                    <path d="M20 7H4"/>
-                                    <path d="M8 21l-4-4 4-4"/>
-                                    <path d="M4 17h16"/>
+
+                    <div class="social-section animate-fade-in-up delay-400">
+                        <div class="social-label">Join the Community</div>
+                        <div class="social-links">
+                            <a href="https://x.com/darkhorseoneth1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow on X (Twitter)">
+                                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                                 </svg>
-                                Swap ETH → $DARKHORSE
-                            </h2>
-                            <p class="widget-subtitle">Trade directly through Uniswap - Connect wallet to start swapping</p>
+                                X (Twitter)
+                            </a>
+                            <a href="https://t.me/+zCE3-32AAvJlMjZk" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Join Telegram">
+                                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.64 6.8l-1.6 7.52c-.12.56-.44.7-.9.44l-2.5-1.84-1.2 1.16c-.14.14-.26.26-.52.26l.18-2.6 4.7-4.24c.2-.18-.04-.28-.32-.1L8.9 12.32l-2.48-.78c-.54-.16-.54-.54.12-.8l9.68-3.72c.44-.16.84.1.68.8z"/>
+                                </svg>
+                                Telegram
+                            </a>
+                            <a href="https://discord.gg/Rgf7p5zCF5" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Join Discord">
+                                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.211.375-.445.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.120.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+                                </svg>
+                                Discord
+                            </a>
                         </div>
-                        <iframe 
-                            class="uniswap-iframe"
-                            src="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xa311cE63bE7f16b255e56a651F952826A2D8BAf4&exactField=input&exactAmount=0.1"
-                            allow="clipboard-write"
-                            title="Uniswap widget for swapping ETH to DARKHORSE"
-                            loading="lazy">
-                        </iframe>
                     </div>
                 </div>
             </div>
@@ -1426,11 +1383,23 @@
     <section id="swap" class="main-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Swap ETH → $DARKHORSE</h2>
-                <p class="section-subtitle">Connect your wallet and trade directly through Uniswap</p>
+                <h2 class="section-title animate-fade-in-up">Swap ETH → $DARKHORSE</h2>
+                <p class="section-subtitle animate-fade-in-up delay-200">Connect your wallet and trade directly through Uniswap</p>
             </div>
             <div class="swap-widget-center">
-                <div class="widget-container">
+                <div class="widget-container animate-fade-in-up delay-300">
+                    <div class="widget-header">
+                        <h3 class="widget-title">
+                            <svg class="widget-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M16 3l4 4-4 4"/>
+                                <path d="M20 7H4"/>
+                                <path d="M8 21l-4-4 4-4"/>
+                                <path d="M4 17h16"/>
+                            </svg>
+                            Trade $DARKHORSE
+                        </h3>
+                        <p class="widget-subtitle">Powered by Uniswap</p>
+                    </div>
                     <iframe 
                         class="uniswap-iframe"
                         src="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xa311cE63bE7f16b255e56a651F952826A2D8BAf4&exactField=input&exactAmount=0.1"
