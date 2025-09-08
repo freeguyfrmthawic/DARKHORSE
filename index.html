@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +33,7 @@
             --success: #10b981;
             --warning: #f59e0b;
             --error: #ef4444;
-            
+
             /* Typography Scale */
             --font-xs: 0.75rem;
             --font-sm: 0.875rem;
@@ -48,7 +47,7 @@
             --font-6xl: 3.75rem;
             --font-7xl: 4.5rem;
             --font-8xl: 6rem;
-            
+
             /* Spacing Scale */
             --space-1: 0.25rem;
             --space-2: 0.5rem;
@@ -64,7 +63,7 @@
             --space-24: 6rem;
             --space-32: 8rem;
             --space-40: 10rem;
-            
+
             /* Border Radius */
             --radius-sm: 0.375rem;
             --radius-md: 0.5rem;
@@ -72,7 +71,7 @@
             --radius-xl: 1rem;
             --radius-2xl: 1.5rem;
             --radius-full: 9999px;
-            
+
             /* Animation Timings */
             --transition-fast: 0.15s;
             --transition-medium: 0.3s;
@@ -196,11 +195,11 @@
         }
 
         .nav-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 60px;
-        }
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 70px;
+            }
 
         .nav-logo {
             font-family: 'JetBrains Mono', monospace;
@@ -983,7 +982,7 @@
         .delay-500 { animation-delay: 0.5s; }
 
         /* ============ RESPONSIVE DESIGN ============ */
-        
+
         /* Large Desktop (1440px+) */
         @media (min-width: 1440px) {
             .container {
@@ -991,20 +990,20 @@
                 padding-left: var(--space-8);
                 padding-right: var(--space-8);
             }
-            
+
             .widget-container {
                 min-height: 850px;
                 max-width: 520px;
             }
-            
+
             .uniswap-iframe {
                 height: 780px;
             }
-            
+
             .hero-title {
                 font-size: var(--font-8xl);
             }
-            
+
             .section-title {
                 font-size: var(--font-7xl);
             }
@@ -1015,16 +1014,16 @@
             .about-grid {
                 gap: var(--space-16);
             }
-            
+
             .roadmap-grid {
                 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
                 gap: var(--space-6);
             }
-            
+
             .widget-container {
                 max-width: 480px;
             }
-            
+
             .hero-title {
                 font-size: clamp(var(--font-5xl), 7vw, var(--font-7xl));
             }
@@ -1036,73 +1035,73 @@
                 padding-left: var(--space-4);
                 padding-right: var(--space-4);
             }
-            
+
             .hero {
                 padding: calc(var(--space-24) + 80px) 0 var(--space-16);
             }
-            
+
             .hero-horse-icon {
                 right: -60px;
                 top: -15px;
                 width: 60px;
                 height: 60px;
             }
-            
+
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: var(--space-12);
             }
-            
+
             .contract-address-wrapper {
                 flex-direction: column;
                 gap: var(--space-4);
                 text-align: center;
             }
-            
+
             .copy-button {
                 align-self: stretch;
                 justify-content: center;
             }
-            
+
             .hamburger {
                 display: flex;
             }
-            
+
             .nav-menu {
                 display: none;
             }
-            
+
             .nav-logo {
                 font-size: var(--font-lg);
             }
-            
+
             .nav-logo-img {
                 width: 64px;
                 height: 48px;
             }
-            
+
             .main-section {
                 padding: var(--space-20) 0;
             }
-            
+
             .section-header {
                 margin-bottom: var(--space-16);
             }
-            
+
             .widget-container {
                 min-height: 750px;
                 max-width: 100%;
                 padding: var(--space-6);
             }
-            
+
             .uniswap-iframe {
                 height: 650px;
             }
-            
+
             .hero-title {
                 font-size: clamp(var(--font-4xl), 8vw, var(--font-6xl));
             }
-            
+
             .section-title {
                 font-size: clamp(var(--font-3xl), 6vw, var(--font-5xl));
             }
@@ -1113,98 +1112,98 @@
             .hamburger {
                 display: flex;
             }
-            
+
             .nav-menu {
                 display: none;
             }
-            
+
             .nav-logo {
                 font-size: var(--font-base);
             }
-            
+
             .nav-logo-img {
                 width: 56px;
                 height: 42px;
             }
-            
+
             .hero {
                 padding: calc(var(--space-20) + 80px) 0 var(--space-12);
             }
-            
+
             .main-section {
                 padding: var(--space-16) 0;
             }
-            
+
             .section-header {
                 margin-bottom: var(--space-12);
             }
-            
+
             .social-links {
                 justify-content: center;
             }
-            
+
             .roadmap-grid {
                 grid-template-columns: 1fr;
                 gap: var(--space-6);
             }
-            
+
             .roadmap-card {
                 padding: var(--space-8);
             }
-            
+
             .phase-header {
                 gap: var(--space-4);
             }
-            
+
             .phase-number {
                 width: 50px;
                 height: 50px;
                 font-size: var(--font-lg);
             }
-            
+
             .phase-title {
                 font-size: var(--font-xl);
             }
-            
+
             .widget-container {
                 min-height: 650px;
                 max-width: 100%;
                 padding: var(--space-4);
             }
-            
+
             .widget-header {
                 margin-bottom: var(--space-6);
                 padding-bottom: var(--space-4);
             }
-            
+
             .widget-title {
                 font-size: var(--font-xl);
                 flex-direction: column;
                 gap: var(--space-2);
             }
-            
+
             .uniswap-iframe {
                 height: 580px;
             }
-            
+
             .hero-title {
                 font-size: clamp(var(--font-3xl), 10vw, var(--font-5xl));
             }
-            
+
             .section-title {
                 font-size: clamp(var(--font-2xl), 8vw, var(--font-4xl));
             }
-            
+
             .highlight-card {
                 padding: var(--space-8);
             }
-            
+
             .toast {
                 right: var(--space-4);
                 left: var(--space-4);
                 transform: translateY(-200px);
             }
-            
+
             .toast.show {
                 transform: translateY(0);
             }
@@ -1216,57 +1215,57 @@
                 padding-left: var(--space-3);
                 padding-right: var(--space-3);
             }
-            
+
             .hero {
                 padding: calc(var(--space-16) + 80px) 0 var(--space-10);
             }
-            
+
             .hero-title {
                 font-size: var(--font-4xl);
             }
-            
+
             .hero-horse-icon {
                 right: -30px;
                 top: -10px;
                 width: 35px;
                 height: 35px;
             }
-            
+
             .hero-subtitle {
                 font-size: var(--font-lg);
             }
-            
+
             .contract-card,
             .widget-container,
             .roadmap-card,
             .highlight-card {
                 padding: var(--space-6);
             }
-            
+
             .widget-container {
                 min-height: 600px;
                 max-width: 100%;
             }
-            
+
             .uniswap-iframe {
                 height: 520px;
             }
-            
+
             .hero-horse-icon {
                 right: -25px;
                 top: -8px;
                 width: 30px;
                 height: 30px;
             }
-            
+
             .nav-logo {
                 font-size: var(--font-lg);
             }
-            
+
             .section-title {
                 font-size: var(--font-3xl);
             }
-            
+
             .about-content {
                 font-size: var(--font-base);
             }
@@ -1277,24 +1276,24 @@
             .container {
                 max-width: 1800px;
             }
-            
+
             .widget-container {
                 min-height: 900px;
                 max-width: 550px;
             }
-            
+
             .uniswap-iframe {
                 height: 820px;
             }
-            
+
             .hero-title {
                 font-size: var(--font-8xl);
             }
-            
+
             .section-title {
                 font-size: var(--font-7xl);
             }
-            
+
             .nav-logo {
                 font-size: var(--font-2xl);
             }
@@ -1318,11 +1317,11 @@
                 transition-duration: 0.01ms !important;
                 scroll-behavior: auto !important;
             }
-            
+
             .hero-horse-icon {
                 animation: none;
             }
-            
+
             .highlight-card::before {
                 animation: none;
             }
@@ -1336,11 +1335,11 @@
             .toast {
                 display: none !important;
             }
-            
+
             body {
                 background: white !important;
             }
-            
+
             .hero,
             .main-section {
                 padding: var(--space-8) 0 !important;
@@ -1376,15 +1375,15 @@
                 --shadow-heavy: rgba(0, 0, 0, 0.4);
                 --gradient-bg: linear-gradient(135deg, #1a1a1a 0%, #2a1a2d 50%, #2d2d2d 100%);
             }
-            
+
             .navbar {
                 background: rgba(26, 26, 26, 0.95);
             }
-            
+
             .navbar.scrolled {
                 background: rgba(26, 26, 26, 0.98);
             }
-            
+
             .uniswap-iframe {
                 border: 1px solid var(--border-medium);
             }
@@ -1438,7 +1437,7 @@
                 <p class="hero-subtitle animate-slide-in-left delay-200">
                     The memecoin that embodies true potential and community spirit. Born from innovation, driven by passionate holders, destined for legendary status.
                 </p>
-                
+
                 <div class="hero-cta-section">
                     <div class="contract-card animate-fade-in-up delay-300">
                         <div class="contract-label">
@@ -1476,7 +1475,7 @@
                             </a>
                             <a href="https://discord.gg/Rgf7p5zCF5" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Join Discord">
                                 <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.211.375-.445.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.120.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+                                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.211.375-.445.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.120.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
                                 </svg>
                                 Discord
                             </a>
@@ -1486,7 +1485,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Dedicated Swap Section -->
     <section id="swap" class="main-section">
         <div class="container">
@@ -1519,7 +1518,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Roadmap Section -->
     <section id="roadmap" class="main-section roadmap-section">
         <div class="container">
@@ -1541,7 +1540,7 @@
                         <li class="phase-item">Update Dexscreener for real-time analytics and visibility</li>
                     </ul>
                 </article>
-                
+
                 <article class="roadmap-card">
                     <div class="phase-header">
                         <div class="phase-number">2</div>
@@ -1553,7 +1552,7 @@
                         <li class="phase-item">Collaborate with influencers and key opinion leaders (KOLs) to boost awareness</li>
                     </ul>
                 </article>
-                
+
                 <article class="roadmap-card">
                     <div class="phase-header">
                         <div class="phase-number">3</div>
@@ -1565,7 +1564,7 @@
                         <li class="phase-item">Begin performance tracking and ranking on major platforms</li>
                     </ul>
                 </article>
-                
+
                 <article class="roadmap-card">
                     <div class="phase-header">
                         <div class="phase-number">4</div>
@@ -1580,7 +1579,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- About Section -->
     <section id="about" class="main-section">
         <div class="container">
@@ -1592,7 +1591,7 @@
                 <div class="about-content">
                     <h3>What is $DARKHORSE?</h3>
                     <p><strong>$DARKHORSE is a revolutionary digital token created on the Ethereum blockchain using the ERC-20 standard.</strong></p>
-                    
+
                     <p>It features:</p>
                     <ul>
                         <li>Strong community-driven utility</li>
@@ -1600,14 +1599,14 @@
                         <li>Real market value backed by holder confidence</li>
                         <li>Potential for significant returns through community growth</li>
                     </ul>
-                    
+
                     <p><strong>$DARKHORSE is a valuable memecoin that combines entertainment with real trading opportunities. It represents the future of community-driven digital assets.</strong></p>
-                    
+
                     <p>This token serves as both a store of value and a medium for community engagement, representing a new paradigm in decentralized finance and social trading.</p>
-                    
+
                     <p><strong>Investment Opportunity:</strong> $DARKHORSE offers genuine potential for portfolio growth through its innovative approach to memecoin economics and strong community foundation. Always conduct your own research and invest responsibly.</p>
                 </div>
-                
+
                 <aside class="highlight-card">
                     <h3>TL;DR</h3>
                     <p>$DARKHORSE is a valuable memecoin born from innovation. It has clear purpose, strong utility, and an incredible future driven by our amazing community.</p>
@@ -1617,7 +1616,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Toast Notification -->
     <div id="toast" class="toast" role="alert" aria-live="polite">
         <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -1625,10 +1624,10 @@
         </svg>
         Contract address copied to clipboard!
     </div>
-    
+
     <script>
         // ============ MAIN APPLICATION LOGIC ============
-        
+
         // State management
         const AppState = {
             isNavbarScrolled: false,
@@ -1643,12 +1642,12 @@
             const navLinks = document.querySelectorAll('.nav-link');
             const hamburger = document.getElementById('hamburger');
             const mobileMenu = document.getElementById('mobile-menu');
-            
+
             // Hamburger menu toggle
             function toggleMobileMenu() {
                 hamburger.classList.toggle('active');
                 mobileMenu.classList.toggle('active');
-                
+
                 // Close menu when clicking on a link
                 const mobileNavLinks = mobileMenu.querySelectorAll('.nav-link');
                 mobileNavLinks.forEach(link => {
@@ -1658,7 +1657,7 @@
                     });
                 });
             }
-            
+
             // Scroll effect
             function handleNavbarScroll() {
                 const scrolled = window.scrollY > 50;
@@ -1666,46 +1665,46 @@
                     AppState.isNavbarScrolled = scrolled;
                     navbar.classList.toggle('scrolled', scrolled);
                 }
-                
+
                 // Close mobile menu on scroll
                 if (mobileMenu.classList.contains('active')) {
                     hamburger.classList.remove('active');
                     mobileMenu.classList.remove('active');
                 }
             }
-            
+
             // Smooth scrolling for navigation links
             function handleNavLinkClick(event) {
                 event.preventDefault();
                 const targetId = event.currentTarget.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
-                
+
                 if (targetElement) {
                     const offsetTop = targetElement.offsetTop - 80; // Account for fixed navbar
                     window.scrollTo({
                         top: offsetTop,
                         behavior: 'smooth'
                     });
-                    
+
                     // Update active state
                     updateActiveNavLink(targetId);
                 }
             }
-            
+
             function updateActiveNavLink(activeId) {
                 navLinks.forEach(link => {
                     link.classList.toggle('active', link.getAttribute('href') === `#${activeId}`);
                 });
                 AppState.activeSection = activeId;
             }
-            
+
             // Event listeners
             window.addEventListener('scroll', handleNavbarScroll, { passive: true });
             hamburger.addEventListener('click', toggleMobileMenu);
             navLinks.forEach(link => {
                 link.addEventListener('click', handleNavLinkClick);
             });
-            
+
             // Close mobile menu when clicking outside
             document.addEventListener('click', (event) => {
                 if (!navbar.contains(event.target) && mobileMenu.classList.contains('active')) {
@@ -1713,7 +1712,7 @@
                     mobileMenu.classList.remove('active');
                 }
             });
-            
+
             // Initial call
             handleNavbarScroll();
         }
@@ -1721,10 +1720,10 @@
         // ============ CONTRACT COPY FUNCTIONALITY ============
         function copyContract() {
             if (AppState.isCopying) return;
-            
+
             const contractAddress = '0xa311cE63bE7f16b255e56a651F952826A2D8BAf4';
             AppState.isCopying = true;
-            
+
             // Modern clipboard API with fallback
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(contractAddress)
@@ -1737,18 +1736,18 @@
                 copyUsingLegacyMethod(contractAddress);
             }
         }
-        
+
         function copyUsingLegacyMethod(text) {
             const textArea = document.createElement('textarea');
             textArea.value = text;
             textArea.style.position = 'fixed';
             textArea.style.left = '-999999px';
             textArea.style.top = '-999999px';
-            
+
             document.body.appendChild(textArea);
             textArea.focus();
             textArea.select();
-            
+
             try {
                 document.execCommand('copy');
                 showToast();
@@ -1759,11 +1758,11 @@
                 AppState.isCopying = false;
             }
         }
-        
+
         function showToast() {
             const toast = document.getElementById('toast');
             toast.classList.add('show');
-            
+
             setTimeout(() => {
                 toast.classList.remove('show');
             }, 3000);
@@ -1780,14 +1779,14 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const target = entry.target;
-                        
+
                         // Add animation classes if they don't exist
                         if (!target.classList.contains('animate-fade-in-up') && 
                             !target.classList.contains('animate-slide-in-left') && 
                             !target.classList.contains('animate-slide-in-right')) {
                             target.classList.add('animate-fade-in-up');
                         }
-                        
+
                         // Remove from observer after animation
                         animationObserver.unobserve(target);
                     }
@@ -1798,11 +1797,11 @@
             const elementsToAnimate = document.querySelectorAll(
                 '.roadmap-card, .about-content, .highlight-card, .hero-content, .widget-section'
             );
-            
+
             elementsToAnimate.forEach(element => {
                 animationObserver.observe(element);
             });
-            
+
             AppState.observers.set('animation', animationObserver);
         }
 
@@ -1810,18 +1809,18 @@
         function initializeSectionTracking() {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.nav-link');
-            
+
             const sectionObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
                         const sectionId = entry.target.id;
-                        
+
                         // Update active nav link
                         navLinks.forEach(link => {
                             const isActive = link.getAttribute('href') === `#${sectionId}`;
                             link.classList.toggle('active', isActive);
                         });
-                        
+
                         AppState.activeSection = sectionId;
                     }
                 });
@@ -1829,11 +1828,11 @@
                 threshold: 0.5,
                 rootMargin: '-80px 0px -80px 0px' // Account for navbar
             });
-            
+
             sections.forEach(section => {
                 sectionObserver.observe(section);
             });
-            
+
             AppState.observers.set('section', sectionObserver);
         }
 
@@ -1849,7 +1848,7 @@
                     }
                 });
             }
-            
+
             // Add keyboard support for social links
             const socialLinks = document.querySelectorAll('.social-link');
             socialLinks.forEach(link => {
@@ -1875,15 +1874,15 @@
                         }
                     });
                 }, { threshold: 0.1 });
-                
+
                 iframeObserver.observe(iframe);
                 AppState.observers.set('iframe', iframeObserver);
             }
-            
+
             // Optimize scroll listeners with throttling
             let scrollTimeout;
             const originalScrollHandler = window.onscroll;
-            
+
             window.addEventListener('scroll', () => {
                 if (scrollTimeout) {
                     cancelAnimationFrame(scrollTimeout);
@@ -1900,18 +1899,18 @@
         function initializeErrorHandling() {
             window.addEventListener('error', (event) => {
                 console.error('Global error:', event.error);
-                
+
                 // Don't show error toasts for network errors or third-party scripts
                 if (event.error && event.error.message && 
                     !event.error.message.includes('network') &&
                     !event.filename.includes('uniswap') &&
                     !event.filename.includes('googleapis')) {
-                    
+
                     // Could show user-friendly error message here if needed
                     console.warn('Non-critical error occurred:', event.error.message);
                 }
             });
-            
+
             // Handle promise rejections
             window.addEventListener('unhandledrejection', (event) => {
                 console.error('Unhandled promise rejection:', event.reason);
@@ -1928,7 +1927,7 @@
             skipLink.textContent = 'Skip to main content';
             skipLink.style.position = 'absolute';
             skipLink.style.left = '-9999px';
-            
+
             skipLink.addEventListener('focus', () => {
                 skipLink.style.left = '6px';
                 skipLink.style.top = '6px';
@@ -1939,20 +1938,20 @@
                 skipLink.style.textDecoration = 'none';
                 skipLink.style.borderRadius = '4px';
             });
-            
+
             skipLink.addEventListener('blur', () => {
                 skipLink.style.left = '-9999px';
             });
-            
+
             document.body.insertBefore(skipLink, document.body.firstChild);
-            
+
             // Enhance focus indicators for better keyboard navigation
             document.addEventListener('keydown', (event) => {
                 if (event.key === 'Tab') {
                     document.body.classList.add('keyboard-nav');
                 }
             });
-            
+
             document.addEventListener('mousedown', () => {
                 document.body.classList.remove('keyboard-nav');
             });
@@ -1965,15 +1964,15 @@
             initializeAnimations();
             initializeSectionTracking();
             initializeKeyboardNavigation();
-            
+
             // Performance and UX
             initializePerformanceOptimizations();
             initializeErrorHandling();
             initializeAccessibility();
-            
+
             // Analytics and tracking (placeholder)
             // initializeAnalytics();
-            
+
             console.log('$DARKHORSE application initialized successfully');
         }
 
@@ -1983,7 +1982,7 @@
         } else {
             initializeApp();
         }
-        
+
         // Cleanup function for observers
         window.addEventListener('beforeunload', () => {
             AppState.observers.forEach(observer => {
